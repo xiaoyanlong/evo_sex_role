@@ -118,9 +118,7 @@ Three csv files will be produced:
 
 1. `all_traits`: Average values of female care, male care, female preferences, male ornaments in the population, population size at each state (pre-mating state, mating state, caring state, juvenile state).
 
-2. `deaths`: Genetic information of all dead individuals.
-
-3. `offspring`:  Genetic information of all parents and their offspring.
+2. `offspring`:  Genetic information of all parents and their offspring.
 
 
 # Issues
