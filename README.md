@@ -55,12 +55,12 @@ on the "normal" laptop (RAM: 16 GB; CPU: 4 cores, 2.1 GHz/core).
 sudo apt install cmake
 sudo apt install libtbb-dev
 
-git clone https://github.com/xiaoyanlong/evosexrole.git
-cd ~/evosexrole/evorole
+git clone https://github.com/xiaoyanlong/evo_sex_role.git
+cd ~/evo_sex_role/evorole
 mkdir build & cd build
 cmake ..
 make install
-cd ~/evosexrole/evorole/bin
+cd ~/evo_sex_role/evorole/bin
 ./evorole --help
 ./evorole param=../param.json outdir='your output directory'
 ```
@@ -72,12 +72,12 @@ Since we have to run thousands of simulations, peregrine cluster was used. If yo
 module load GCC --latest
 module load CMake --latest
 
-git clone https://github.com/xiaoyanlong/evosexrole.git
-cd ~/evosexrole/evorole
+git clone https://github.com/xiaoyanlong/evo_sex_role.git
+cd ~/evo_sex_role/evorole
 mkdir build & cd build
 cmake ..
 make install
-cd ~/evosexrole/evorole/bin
+cd ~/evo_sex_role/evorole/bin
 ./evorole --help
 ./evorole param=../param.json outdir='your output directory'
 ```
