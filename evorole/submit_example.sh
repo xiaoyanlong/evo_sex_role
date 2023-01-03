@@ -11,4 +11,4 @@
 module load GCC --latest
 
 datadir="/data/$(whoami)"
-./bin/evorole --force param=param.json rep=1 outdir=$datadir/evorole
+./bin/evorole --force param=param.json rep=10 outdir=$datadir/evorole
