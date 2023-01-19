@@ -114,7 +114,7 @@ If you want to implement other scenarios，such as sexual selection, please reme
 
 ## Outputs
 
-Three csv files will be produced: 
+Two csv files will be produced: 
 
 1. `all_traits`: Average values of female care, male care, female preferences, male ornaments in the population, population size at each state (pre-mating state, mating state, caring state, juvenile state).
 
