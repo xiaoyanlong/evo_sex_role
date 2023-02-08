@@ -20,7 +20,7 @@ email: xiaoyan.long@biologie.uni-freiburg.de and f.j.weissing@rug.nl
 
 # Overview
 
-We built an individual-based evolutionary simulation to study the evolution of sex roles.The `evorole` folder contains all codes which are needed for simulations. In addition, analytical model has also been investigated to complement our simulation study. The `Mathematical analysis` folder contains one pdf file indicating the details of mathematical analysis and one Mathematica notebook showing how we get the evolutionary trajectories and pairwise invasibility plots.
+We built an individual-based evolutionary simulation to study the evolution of sex roles.The `evorole` folder contains all codes which are needed for simulations. In addition, analytical model has also been investigated to complement our simulation study. The `Mathematical analysis` folder contains one pdf file indicating the details of mathematical analysis and one Mathematica notebook showing how we get the evolutionary trajectories and pairwise invasibility plots. 
 
 
 
@@ -120,6 +120,8 @@ Two csv files will be produced:
 
 2. `offspring`:  Genetic information of all parents and their offspring.
 
+In the 'Data_demo' folder, you can find representative outcomes for the baseline scenario and the scenario with weak parental synergy (σ = 0.05).
+
 
 # Issues
 
@@ -127,4 +129,4 @@ If you have any questions about the code or need any help when run the simulatio
 
 # Citation
 
-If you are going use this code, please cite our paper.
+If you are going use the code, please cite our paper.
