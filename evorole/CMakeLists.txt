@@ -2,7 +2,6 @@
 # evorole CMake file
 #============================================================================== 
 cmake_minimum_required(VERSION 3.10)
-link_libraries(stdc++fs)
 
 project(evorole)
 
