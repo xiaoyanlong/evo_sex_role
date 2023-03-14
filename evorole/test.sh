@@ -2,7 +2,7 @@
 
 #!!! adjust the time quota !!!
 
-#SBATCH --time=15:00
+#SBATCH --time=01:00:00
 #SBATCH --ntasks=1
 #SBATCH --mem=1000
 #SBATCH --cpus-per-task=16
