@@ -7,6 +7,8 @@
 #SBATCH --nodes=1
 #SBATCH --mem=1000
 #SBATCH --cpus-per-task=16
+#SBATCH --partition=dev_multiple
 
-datadir="/~/$(whoami)"
-./bin/evorole --force param=param.json rep=10 outdir=$datadir/evorole
+datadir="/home/$(whoami)"
+./bin/evorole --force param=param.json rep=10 outdir=$datadir/data
+
