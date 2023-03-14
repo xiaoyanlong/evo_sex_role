@@ -4,7 +4,7 @@
 
 #SBATCH --time=00:15:00
 #SBATCH --ntasks=1
-#SBATCH --nodes=1
+#SBATCH --nodes=2
 #SBATCH --mem=1000
 #SBATCH --cpus-per-task=16
 #SBATCH --partition=dev_multiple
