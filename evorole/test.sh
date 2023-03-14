@@ -8,6 +8,6 @@
 #SBATCH --cpus-per-task=16
 #SBATCH --partition=dev_multiple
 
-datadir="/home/$(whoami)"
+datadir="~/"
 ./bin/evorole --force param=param.json rep=10 outdir=$datadir/data
 
