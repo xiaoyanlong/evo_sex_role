@@ -9,6 +9,6 @@
 #SBATCH --cpus-per-task=16
 #SBATCH --partition=single
 
-datadir="/$(whoami) /pfs/work7"
-./bin/evorole --force param=param.json rep=10 outdir=$datadir/evosexrole/data/2023-03-16/premating_initial5_m0_prefemale1
+datadir="$(whoami)/pfs/work7"
+./bin/evorole --force param=param.json rep=10 outdir=$datadir/2023-03-16_premating_initial5_m0_prefemale1
 
