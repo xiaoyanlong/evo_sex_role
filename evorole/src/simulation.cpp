@@ -255,8 +255,7 @@ namespace evorole {
     // mutation
     og.P = add_p_tau_cauchy_mutation_if(og.P, mut_par.m_P, mut_par.sigma_P, mut_par.smax_P, reng_);
     og.tau = add_p_tau_cauchy_mutation_if(og.tau, mut_par.m_tau, mut_par.sigma_tau, mut_par.smax_tau, reng_);
-    auto mutation_pc = (day > 50000) ? mut_par.m_pc : 0.0;
-    auto day_mut = std::bernoulli_distribution(mutation_pc);
+    auto day_mut = std::bernoulli_distribution(mut_par.m_pc);
     if (day_mut(reng_)) og.pc1 = std::max(0, og.pc1 + (2 * binary(reng_) - 1));
     if (day_mut(reng_)) og.pc2 = std::max(0, og.pc2 + (2 * binary(reng_) - 1));
     return offspring;
