@@ -5,20 +5,20 @@
 		"genome": {
 			"P": 0.0,
 			"tau": 0.0,
-			"pc1": 20,
-			"pc2": 20
+			"pc1": 20.0,
+			"pc2": 20.0
 		},
 		"female": {
 			"mu": [ 0.001, 0.001, 0.001, 0.00005 ],
 			"preT": 1,
-			"random_mating": true,
+			"random_mating": false,
 			"gamma": 0.003,
 			"kappa": 0.02,
 			"alpha": 2.0
 		},
 		"male": {
 			"mu": [ 0.001, 0.001, 0.001, 0.00005 ],
-			"beta": [ 0.00001, 0.00001, 0.0, 0.0 ],
+			"beta": [ 0.00001, 0.00001, 0.00001, 0.00001 ],
 			"preT": 1,
 			"gamma": 0.003
 		},
@@ -28,17 +28,16 @@
 			"sigma": 0.0
 		},
 		"mutation": {
-			"m_P": 0.0,
-			"sigma_P": 0.01,
-			"smax_P": 0.05,
-			"m_tau": 0.0,
-			"sigma_tau": 0.01,
-			"smax_tau": 0.05,
-			"m_pc": 0.005
+			"m_P": 0.005,
+			"sigma_P": 0.1,
+			"m_tau": 0.005,
+			"sigma_tau": 0.1,
+			"m_pc": 0.005,
+			"sigma_pc":0.5
 		},
 		"recorder": {
-			"event_interval": 1000,
-			"trait_interval": 10000
+			"event_interval": 500000,
+			"trait_interval": 50000
 		}
 	}
 ]
