@@ -7,7 +7,7 @@
 #SBATCH --nodes=1
 #SBATCH --mem=8000
 #SBATCH --cpus-per-task=16
-#SBATCH --partition=multiple
+#SBATCH --partition=single
 #SBATCH --array=1-10:1
 
 datadir="/pfs/work7/workspace/scratch/fr_xl1011-data/evosexrole"
