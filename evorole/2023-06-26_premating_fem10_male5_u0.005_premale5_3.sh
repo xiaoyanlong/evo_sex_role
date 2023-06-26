@@ -10,5 +10,5 @@
 #SBATCH --partition=single
 
 datadir="/pfs/work7/workspace/scratch/fr_xl1011-data/evosexrole"
-./bin/evorole --force param=2023-06-26_premating_fem10_male5_u0.005_premale5.json rep=20 outdir=$datadir/2023-06-26_premating_fem10_male5_u0.005_premale5_
+./bin/evorole --force param=2023-06-26_premating_fem10_male5_u0.005_premale5.json rep=20 outdir=$datadir/2023-06-26_premating_fem10_male5_u0.005_premale5_3
 
