@@ -2,12 +2,13 @@
 
 #!!! adjust the time quota !!!
 
-#SBATCH --time=24:00:00
+#SBATCH --time=02:00:00
 #SBATCH --ntasks=1
 #SBATCH --nodes=1
-#SBATCH --mem=8000
+#SBATCH --mem=5000
 #SBATCH --cpus-per-task=16
 #SBATCH --partition=single
 
 datadir="/pfs/work7/workspace/scratch/fr_xl1011-data/evosexrole"
-./bin/evorole --force param=2023-06-12_premating_original_mu0.0_prefemale25.json rep=100 outdir=$datadir/2023-06-12_premating_original_mu0.0_prefemale25
+./bin/evorole --force param=2023-06-26_fig.2_fem0_male5.json rep=20 outdir=$datadir/2023-06-26_fig.2_fem0_male5
+
