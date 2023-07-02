@@ -2,7 +2,7 @@
 
 #!!! adjust the time quota !!!
 
-#SBATCH --time=12:00:00
+#SBATCH --time=06:00:00
 #SBATCH --ntasks=1
 #SBATCH --nodes=1
 #SBATCH --mem=5000
