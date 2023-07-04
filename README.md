@@ -35,17 +35,17 @@ Disk space: 20-50 GB of free space
 
 ## Software Requirements
 
-## Individual-based simulations
+### Individual-based simulations
 
 To run the individual-based simulations, we advise Windows users to download `Visual Studio Community 2019` and Mac users to download the free compiler `XCode`.
 The installation of Visual Studio Community 2019 can take around 1.5 to 2 hours depending on your internet speed and the components you have selected to install.
 The installation of XCode can take around 2 hours. 
 
-## Analytical models
+### Analytical models
 
 To run the mathematical models, users should download `Wolfram Mathematica 12.0.0`.
 
-## Data analysis
+### Data analysis
 All simulation data were analysed in R (4.3.1).
 
 
