@@ -96,7 +96,7 @@ cd ~/evo_sex_role/evorole/bin
 ./evorole param=../param.json outdir='your output directory'
 ```
 
-Even though it is possible to run jobs completely from the command line, it is often overly tedious and unorganized to do so. Instead, we used job scripts for the batch jobs. A job script is a set of Linux commands paired with a set of resource requirements that can be passed to the Slurm job scheduler. Slurm will then generate a job according to the parameters set in the job script. Any commands that are included with the job script will be run within the job.
+Even though it is possible to run jobs completely from the command line, it is often overly tedious and unorganized to do so. Instead, we used job scripts for the batch jobs.
 
 Using following command, batch jobs will be submitted (`submit_example.sh` is already offered in the folder of `evorole`):
 
