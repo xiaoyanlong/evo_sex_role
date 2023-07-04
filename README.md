@@ -20,7 +20,7 @@ email: xiaoyan.long@biologie.uni-freiburg.de and f.j.weissing@rug.nl
 
 # Overview
 
-We built an individual-based evolutionary simulation to study the evolution of sex roles.The `evorole` folder contains all codes which are needed for simulations. In addition, analytical model has also been investigated to complement our simulation study. The `Mathematical analysis` folder contains one pdf file indicating the details of mathematical analysis and one Mathematica notebook showing how we get the evolutionary trajectories and pairwise invasibility plots. 
+We built an individual-based evolutionary simulation to study the evolution of sex roles.The `evorole` folder contains all codes which are needed for simulations. All simulation data are analysed in R (version 4.3.1). R-script for data analysis can be found in the `R script` folder. In addition, analytical model has also been investigated to complement our simulation study. The `Mathematical analysis` folder contains one pdf file indicating the details of mathematical analysis and one Mathematica notebook showing how we get the evolutionary trajectories and pairwise invasibility plots. 
 
 
 
@@ -82,7 +82,7 @@ cd ~/evo_sex_role/evorole/bin
 ./evorole param=../param.json outdir='your output directory'
 ```
 
-If you prefer to submit job on peregrine, you can use following command (`submit_example.sh` is already offered in the folder of `evorole`):
+If you prefer to submit job on peregrine, you can use following command (`submit_example.sh` is already offered in the folder of `evorole`, Please modify the working directory to yours in the job script):
 
 ```
 cd ~/evosexrole/evorole
@@ -110,7 +110,7 @@ We offered two parameter settings：
 
 2. The scenario considering weak parental synergy (σ = 0.05).
 
-If you want to implement other scenarios，such as sexual selection, please remember to turn off random mating and allow female preferences and male ornaments to evolve (m_p: 0.005, m_tau:0.005, random_mating: false). You can use this code script to produce your own simulation data with the parameters you are interested in.
+If you want to implement other scenarios, such as sexual selection, please remember to turn off random mating and allow female preferences and male ornaments to evolve (m_p: 0.005, m_tau:0.005, random_mating: false). You can use this code script to produce your own simulation data with the parameters you are interested in.
 
 ## Outputs
 
