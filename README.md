@@ -80,7 +80,7 @@ cd ~/evo_sex_role/evorole/bin
 ```
 ### High-performance computing (HPC) clusters
 
-Since we have to run thousands of simulations, the HPC clusters were used. If you could also use HPC clusters, you can run the simulations as follow.
+Since we have to run thousands of simulations, the HPC clusters were used. If you could also use HPC clusters, you can run the simulations as follows.
 
 ```
 module load GCC --latest
