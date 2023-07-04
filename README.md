@@ -9,7 +9,7 @@ email: xiaoyan.long@biologie.uni-freiburg.de and f.j.weissing@rug.nl
 ## Contents
 
 - [Overview](#overview)
-- [Software Requirements](#software-requirements)
+- [System Requirements](#system-requirements)
 - [Demo](#demo)
 - [Results](#results)
 - [License](./LICENSE)
@@ -20,19 +20,33 @@ email: xiaoyan.long@biologie.uni-freiburg.de and f.j.weissing@rug.nl
 
 # Overview
 
-We built an individual-based evolutionary simulation to study the evolution of sex roles.The `evorole` folder contains all codes which are needed for simulations. All simulation data are analysed in R (version 4.3.1). R-script for data analysis can be found in the `R script` folder. In addition, analytical model has also been investigated to complement our simulation study. The `Mathematical analysis` folder contains one pdf file indicating the details of mathematical analysis and one Mathematica notebook showing how we get the evolutionary trajectories and pairwise invasibility plots. 
+We built an individual-based evolutionary simulation to study the evolution of sex roles.The `evorole` folder contains all c++ codes which are needed for simulations. All simulation data are analysed in R (version 4.3.1). The R-script for data analysis can be found in the `R script` folder. In addition, analytical model has also been investigated to complement our simulation study. The `Mathematical analysis` folder contains one pdf file indicating the details of mathematical analysis and one Mathematica notebook showing how we get the evolutionary trajectories and pairwise invasibility plots in this study. 
 
 
+# System Requirements
 
-# Software Requirements
+## Hardware Requirements
+
+To run the simulations, a standard computer with enough RAM should be enough. For minimal performance, this will be a computer with about 2 GB of RAM. For optimal performance, we recommend a computer with the following specs:
+
+RAM: 16+ GB
+CPU: 4+ cores, 1.8 GHz or faster processor
+Disk space: 20-50 GB of free space
+
+## Software Requirements
 
 ## Individual-based simulations
 
-To run the individual-based simulations, we advise Windows users to download `Visual Studio Community 2019` and Mac users to download free compiler `XCode`.
+To run the individual-based simulations, we advise Windows users to download `Visual Studio Community 2019` and Mac users to download the free compiler `XCode`.
+The installation of Visual Studio Community 2019 can take around 1.5 to 2 hours depending on your internet speed and the components you have selected to install.
+The installation of XCode can take around 2 hours. 
 
 ## Analytical models
 
-To run the mathematical models, users should download `Wolfram Mathematica 12`.
+To run the mathematical models, users should download `Wolfram Mathematica 12.0.0`.
+
+## Data analysis
+All simulation data were analysed in R (4.3.1).
 
 
 # Demo
@@ -64,9 +78,9 @@ cd ~/evo_sex_role/evorole/bin
 ./evorole --help
 ./evorole param=../param.json outdir='your output directory'
 ```
-### Peregrine cluster
+### High-performance computing (HPC) clusters
 
-Since we have to run thousands of simulations, peregrine cluster was used. If you could also use peregrine cluster, you can run the simulations as follow.
+Since we have to run thousands of simulations, the HPC clusters were used. If you could also use HPC clusters, you can run the simulations as follow.
 
 ```
 module load GCC --latest
@@ -82,7 +96,9 @@ cd ~/evo_sex_role/evorole/bin
 ./evorole param=../param.json outdir='your output directory'
 ```
 
-If you prefer to submit job on peregrine, you can use following command (`submit_example.sh` is already offered in the folder of `evorole`, Please modify the working directory to yours in the job script):
+Even though it is possible to run jobs completely from the command line, it is often overly tedious and unorganized to do so. Instead, we used job scripts for the batch jobs. A job script is a set of Linux commands paired with a set of resource requirements that can be passed to the Slurm job scheduler. Slurm will then generate a job according to the parameters set in the job script. Any commands that are included with the job script will be run within the job.
+
+Using following command, batch jobs will be submitted (`submit_example.sh` is already offered in the folder of `evorole`):
 
 ```
 cd ~/evosexrole/evorole
@@ -96,7 +112,10 @@ You need to adjust time quota! This is given as
 ```
 #SBATCH --time=hh:mm:ss
 ```
-The example runs in roughly 10min (20 simulations in total) in peregrine cluster. --time must be long enough for the simulations to finish. To be sure, oversubscribe your estimated runtime.
+
+Moreover, do not forget to modify the working directory to yours in the job script.
+
+The example runs in roughly 20 minutes (20 simulations in total). --time must be long enough for the simulations to finish. To be sure, oversubscribe your estimated runtime.
 
 # Results
 
@@ -106,7 +125,7 @@ Simulation parameters can be changed in `param.json` (in the folder of `evorole`
 
 We offered two parameter settings：
 
-1. The baseline scenario where mating is randome and only care strategies can evolve.
+1. The baseline scenario where mating is random and only care strategies can evolve.
 
 2. The scenario considering weak parental synergy (σ = 0.05).
 
@@ -114,9 +133,9 @@ If you want to implement other scenarios, such as sexual selection, please remem
 
 ## Outputs
 
-Two csv files will be produced: 
+Two CSV files will be produced: 
 
-1. `all_traits`: Average values of female care, male care, female preferences, male ornaments in the population, population size at each state (pre-mating state, mating state, caring state, juvenile state).
+1. `all_traits`: Average values of female care, male care, female preferences, male ornaments in the population, and population size at each state (pre-mating state, mating state, caring state, juvenile state).
 
 2. `offspring`:  Genetic information of all parents and their offspring.
 
@@ -125,8 +144,8 @@ In the 'Data_demo' folder, you can find representative outcomes for the baseline
 
 # Issues
 
-If you have any questions about the code or need any help when run the simulations, please contact us. And if you would like to contribute to this project, please also let us know.
+If you have any questions about the code or need any help when running the code, please contact us. And if you would like to contribute to this project, please also let us know.
 
 # Citation
 
-If you are going use the code, please cite our paper.
+If you are going to use the code, please cite our paper.
