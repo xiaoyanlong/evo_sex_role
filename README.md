@@ -148,4 +148,6 @@ If you have any questions about the code or need any help when running the code,
 
 # Citation
 
-If you are going to use the code, please cite our paper.
+If you are going to use the code, please cite our paper. 
+
+Long, X., Weissing, F.J. Transient polymorphisms in parental care strategies drive divergence of sex roles. _Nat Commun_ 14, 6805 (2023). https://doi.org/10.1038/s41467-023-42607-6
