@@ -40,8 +40,8 @@ namespace evorole {
   // female specific parameter
   struct female_t
   {
-    std::array<double, Pool::max> mu = { 0.001, 0.001, 0.001, 0.00005 };   // baseline mortality per pool
-    int preT = 5;                 // days in recovery pool
+    std::array<double, Pool::max> mu = { 0.002, 0.001, 0.001, 0.00005 };   // baseline mortality per pool
+    int preT = 0;                 // days in recovery pool
     bool random_mating = true;    // random mating: no sexual selection
     double gamma = 0.003;         // degree of female mortality density dependence
     double kappa = 0.03;          // scaling factor that affects the intensity of sexual selection
@@ -52,9 +52,9 @@ namespace evorole {
   // male specific parameter
   struct male_t
   {
-    std::array<double, Pool::max> mu = { 0.001, 0.001, 0.001, 0.00005 };      // baseline mortality per pool
+    std::array<double, Pool::max> mu = { 0.003, 0.001, 0.001, 0.00005 };      // baseline mortality per pool
     std::array<double, Pool::max> beta = { 0.0001, 0.00001, 0.00001, 0.0 };   // ornament induced mortality per pool
-    int preT = 5;                 // days in recovery pool
+    int preT = 0;                 // days in recovery pool
     double gamma = 0.003;         // degree of male mortality density dependence
   };
 
@@ -84,15 +84,15 @@ namespace evorole {
   // data collection
   struct recorder_t
   {
-    int event_interval = 40000;   // interval ind. events (death, offspring)
-    int trait_interval = 1000;    // interval all traits
+    int event_interval = 5000000;   // interval ind. events (death, offspring)
+    int trait_interval = 2000;    // interval all traits
   };
 
 
   struct Parameter
   {
     int N = 2000;                   // initial mate pool size 
-    int tEnd = 5000001;             // simulation time ticks
+    int tEnd = 2001;             // simulation time ticks
 
     genome_t genome;
     female_t female;
